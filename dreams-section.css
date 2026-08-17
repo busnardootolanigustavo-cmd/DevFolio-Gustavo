@@ -1,0 +1,69 @@
+/* =======================================================
+   Seção "Construa seus sonhos comigo" — substitui a #stats
+   Fundo preto, texto à esquerda, efeito Siri Wave à direita
+======================================================== */
+
+.dreams-section {
+  background-color: #000000;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.dreams-section .dreams-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.dreams-section .dreams-text {
+  flex: 1 1 420px;
+  color: #ffffff;
+}
+
+.dreams-section .dreams-text h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.dreams-section .dreams-text p {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 480px;
+}
+
+.dreams-section .dreams-effect {
+  flex: 1 1 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.siri-wave-canvas {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  background: #000000;
+}
+
+@media (max-width: 991px) {
+  .dreams-section .dreams-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dreams-section .dreams-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dreams-section .dreams-text h2 {
+    font-size: 32px;
+  }
+}

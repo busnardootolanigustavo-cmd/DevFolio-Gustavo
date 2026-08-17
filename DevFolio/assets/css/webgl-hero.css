@@ -1,0 +1,190 @@
+/* ===== WebGL Shader Hero — scoped styles ===== */
+
+.webgl-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.webgl-hero__canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+}
+
+.webgl-hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25vh;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 55%, #000000 100%);
+}
+
+.webgl-hero__card {
+  position: relative;
+  z-index: 10;
+  border: 1px solid #27272a;
+  padding: 8px;
+  width: 100%;
+  max-width: 768px;
+}
+
+.webgl-hero__inner {
+  position: relative;
+  border: 1px solid #27272a;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.webgl-hero__title {
+  margin: 0 0 12px;
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  font-size: clamp(2rem, 8vw, 7rem);
+  line-height: 1.05;
+}
+
+.webgl-hero__subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 24px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .webgl-hero__subtitle { font-size: 1rem; }
+}
+
+@media (min-width: 1024px) {
+  .webgl-hero__subtitle { font-size: 1.125rem; }
+}
+
+.webgl-hero__badge {
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.webgl-hero__badge p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #22c55e;
+}
+
+.webgl-hero__status {
+  position: relative;
+  display: inline-flex;
+  height: 12px;
+  width: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.webgl-hero__status-ping {
+  position: absolute;
+  inset: 0;
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 9999px;
+  background: #22c55e;
+  opacity: 0.75;
+  animation: webglPing 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.webgl-hero__status-dot {
+  position: relative;
+  display: inline-flex;
+  height: 8px;
+  width: 8px;
+  border-radius: 9999px;
+  background: #22c55e;
+}
+
+@keyframes webglPing {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+.webgl-hero__cta-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.webgl-hero__cta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0 40px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.webgl-hero__cta:hover {
+  transform: scale(1.05);
+}
+
+.webgl-hero__cta:active {
+  transform: scale(0.97);
+}
+
+.webgl-hero__cta-glass {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 9999px;
+  backdrop-filter: blur(3px) url(#container-glass);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow:
+    0 0 6px rgba(0, 0, 0, 0.03),
+    0 2px 6px rgba(0, 0, 0, 0.08),
+    inset 0 0 6px 6px rgba(255, 255, 255, 0.12),
+    inset 0 0 2px 2px rgba(255, 255, 255, 0.06),
+    0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+.webgl-hero__cta span {
+  position: relative;
+  z-index: 1;
+}
+
+.webgl-hero__glass-filter {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .webgl-hero__status-ping {
+    animation: none;
+  }
+}

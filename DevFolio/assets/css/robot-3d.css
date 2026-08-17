@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Robot 3D Section — estilos
+   Salve este arquivo em: assets/css/robot-3d.css
+   ========================================================================== */
+
+/* Faixa de transição: funde a cor de fundo da página até o preto,
+   preparando a entrada na seção do robô 3D */
+.section-fade-to-black {
+  position: relative;
+  height: 260px;
+  margin-bottom: -260px;
+  background: linear-gradient(to bottom, var(--background-color, #ffffff) 0%, #000000 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.robot-3d-section {
+  position: relative;
+  z-index: 1;
+  background: #000000;
+  padding-top: 280px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.robot-3d-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  min-height: 500px;
+}
+
+.robot-3d-spotlight {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.15), transparent 70%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: translate(-50%, -50%);
+  filter: blur(20px);
+  z-index: 0;
+}
+
+.robot-3d-card:hover .robot-3d-spotlight {
+  opacity: 1;
+}
+
+.robot-3d-content {
+  display: flex;
+  align-items: stretch;
+  min-height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.robot-3d-text {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.robot-3d-text h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #fafafa, #a3a3a3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 1rem;
+}
+
+.robot-3d-text p {
+  color: #d4d4d4;
+  max-width: 480px;
+  margin: 0;
+}
+
+/* Área da cena 3D.
+   O watermark "Built with Spline" fica dentro do shadow DOM do
+   componente <spline-viewer>, então nenhuma div ou z-index externo
+   consegue ficar por cima dele de forma confiável (o canvas/WebGL
+   costuma "vazar" acima de outras camadas). A solução que funciona
+   de verdade é CORTAR fisicamente aquele pedaço: deixamos o visor
+   maior que a área visível e escondemos o excesso com overflow:hidden,
+   então o watermark (que fica sempre colado no canto inferior direito
+   do próprio visor) nunca chega a ser desenhado dentro da área visível. */
+.robot-3d-scene {
+  flex: 1;
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.robot-3d-scene spline-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 70px);
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .robot-3d-content {
+    flex-direction: column;
+  }
+
+  .robot-3d-text {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .robot-3d-text p {
+    max-width: none;
+  }
+
+  .robot-3d-scene {
+    min-height: 320px;
+  }
+}

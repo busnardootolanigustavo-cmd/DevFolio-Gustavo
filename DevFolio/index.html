@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Gustavo Busnardo</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- WebGL Shader Hero CSS -->
+  <link href="assets/css/webgl-hero.css" rel="stylesheet">
+
+  <!-- Robot 3D Section CSS -->
+  <link href="assets/css/robot-3d.css" rel="stylesheet">
+
+  <!-- Dreams (Siri Wave) Section CSS -->
+  <link href="assets/css/dreams-section.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">DevFolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#services">Habilidades</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="portfolio-details.html">Design showcase </a></li>
+        
+            
+             
+          </li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="webgl-hero">
+
+      <canvas class="webgl-hero__canvas"></canvas>
+
+      <div class="webgl-hero__card">
+        <div class="webgl-hero__inner">
+          <h1 class="webgl-hero__title">Gustavo Busnardo </h1>
+          <p class="webgl-hero__subtitle">Desenvolvedor, Designer, Suporte Técnico , Marketing Digital 
+</p>
+
+          <div class="webgl-hero__badge">
+            <span class="webgl-hero__status">
+              <span class="webgl-hero__status-ping"></span>
+              <span class="webgl-hero__status-dot"></span>
+            </span>
+            <p>Disponivel para novos projetos </p>
+          </div>
+
+         
+        </div>
+      </div>
+
+      <svg class="webgl-hero__glass-filter" aria-hidden="true">
+        <defs>
+          <filter id="container-glass" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+            <feTurbulence type="fractalNoise" baseFrequency="0.05 0.05" numOctaves="1" seed="1" result="turbulence" />
+            <feGaussianBlur in="turbulence" stdDeviation="2" result="blurredNoise" />
+            <feDisplacementMap in="SourceGraphic" in2="blurredNoise" scale="70" xChannelSelector="R" yChannelSelector="B" result="displaced" />
+            <feGaussianBlur in="displaced" stdDeviation="4" result="finalBlur" />
+            <feComposite in="finalBlur" in2="finalBlur" operator="over" />
+          </filter>
+        </defs>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/portfolio/foto perfil.jfif" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Nome: </strong> <span>Gustavo Busnardo Ortolani</span></p>
+                <p><strong>Profissão: </strong> <span>Técnico em Informática</span></p>
+                <p><strong>Email: </strong> <span>busnardoortolanigustavo@gmail.com</span></p>
+                <p><strong>Telefone: </strong> <span>19-98361-0545</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>CSS</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Corel Drawn</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Photoshop</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>Sobre mim </h4>
+              <p>
+                Olá! Sou estudante do Ensino Médio e cursando o Técnico em Informática.
+                 Sou apaixonado por tecnologia e por transformar ideias em soluções reais.
+                 
+
+              </p>
+              <p>
+                Minha jornada une a criatividade do Design e do Marketing Digital com a lógica da Programação
+                 e a resolução de problemas no Suporte Técnico. Acredito que um bom profissional de TI precisa entender tanto do código que roda por trás quanto da experiência de quem está na ponta usando o sistema.
+              </p>
+              <p>
+               Atualmente, trabalho como técnico em informatica no Colégio Elite Politec
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resumo</h2>
+        <p>Um pouco da minha trajetória educacional e profissional </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumario</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Gustavo Busnardo </h4>
+              <p><em>Estudante de Ensino Médio integrado ao Técnico em Informática, com experiência prática na área de Tecnologia da Informação e educação. Atualmente atua como estagiário de TI, realizando manutenção de computadores, suporte técnico e manutenção dos laboratórios de informática. </em></p>
+              <ul>
+                <li>Nova odessa, SP, Brasil</li>
+                <li>19-98361-0545</li>
+                <li>busnardoortolanigustavo@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Educação</h3>
+            <div class="resume-item">
+              <h4>ENSINO FUNDAMENTAL I E II</h4>
+              <h5>2012 – 2024</h5>
+              <p><em>Colégio Objetivo de Nova Odessa</em></p>
+              <p>Formação do Ensino Fundamental I e II, desenvolvendo conhecimentos acadêmicos e preparando-se para a continuidade dos estudos no Ensino Médio integrado ao Técnico em Informática.</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>ENSINO MÉDIO INTEGRADO AO TÉCNICO EM INFORMÁTICA</h4>
+              <h5>2025 – Presente</h5>
+              <p><em>Colégio Politec</em></p>
+              <p>Atualmente cursando o 2º ano do Ensino Médio integrado ao curso Técnico em Informática, desenvolvendo conhecimentos em tecnologia, programação, informática e desenvolvimento de projetos.</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Experiência Profissional</h3>
+            <div class="resume-item">
+              <h4>ESTAGIÁRIO DE TI</h4>
+              <h5>Atualmente</h5>
+              <p><em>Colégio Elite Politec </em></p>
+              <ul>
+                <li>Atuação na área de Tecnologia da Informação, auxiliando na manutenção, suporte e funcionamento dos equipamentos e ambientes tecnológicos da instituição</li>
+                <li>Realização de manutenção e suporte em computadores e equipamentos de informática </li>
+                <li>Auxílio na identificação e solução de problemas técnicos </li>
+                <li>Suporte aos alunos, professores e funcionários em questões relacionadas à informátic</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>INSTRUTOR DE INFORMÁTICA – ENSINO FUNDAMENTAL E INSTRUTOR DE HTML</h4>
+              <h5>Atualmente</h5>
+              <p><em>Colégio Elite Politec</em></p>
+              <ul>
+                <li>Ensino de conceitos básicos de informática </li>
+                <li>Desenvolvimento de atividades adequadas à faixa etária dos alunos </li>
+                <li>Orientação na utilização de conceitos básicos de desenvolvimento web</li>
+                <li>Auxílio aos alunos durante a criação de páginas e projetos 
+</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Habilidades</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-pc-display"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Suporte Técnico em TI</h3>
+              </a>
+              <p>Experiência prática no atendimento a usuários, identificando e solucionando problemas do dia a dia para garantir o funcionamento dos sistemas.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-tools"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Manutenção de Hardware</h3>
+              </a>
+              <p>Realização de diagnósticos, reparos e manutenção preventiva e corretiva de computadores e equipamentos periféricos.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-server"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Gestão de Laboratórios</h3>
+              </a>
+              <p>Administração e manutenção da infraestrutura de laboratórios de informática, assegurando o ambiente ideal para uso educacional e prático.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Ensino e Mentoria</h3>
+              </a>
+              <p>Experiência como instrutor, adaptando a linguagem tecnológica para facilitar o aprendizado de jovens do Ensino Médio e crianças do Fundamental I.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Designer</h3>
+              </a>
+              <p>Design gráfico e web, criação de identidade visual e layout de interfaces.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Desenvolvimento Web (HTML)</h3>
+              </a>
+              <p>Conhecimento na estruturação de páginas web com HTML, atuando tanto na prática técnica quanto na difusão desse conhecimento em sala de aula.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Stats Section -->
+    <section id="dreams" class="dreams-section section">
+
+      <div class="container">
+        <div class="dreams-row">
+
+          <div class="dreams-text" data-aos="fade-right" data-aos-delay="100">
+            <h2>Construa seus sonhos comigo!</h2>
+          </div>
+
+          <div class="dreams-effect" data-aos="fade-left" data-aos-delay="200">
+            <canvas class="siri-wave-canvas" data-variant="wave"></canvas>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Dreams Section -->
+
+   <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-design">Design</li>
+            <li data-filter=".filter-web">Projetos para Web</li>
+            <li data-filter=".filter-variados">Variados</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-variados">
+              <img src="assets/img/portfolio/planta (2).png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Planta baixa sketchup</h4>
+                <p>Projeto de arquitetura</p>
+                <a href="assets/img/portfolio/planta (2).png" title="Planta Baixa Sketchup" data-gallery="portfolio-gallery-variados" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+              <img src="assets/img/portfolio/logo netflix boa.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Rebrainding da Netflix</h4>
+                <p>Projeto de publicidade e propaganda</p>
+                <a href="assets/img/portfolio/logo netflix boa.png" title="Rebrainding da Netflix" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+              <img src="assets/img/portfolio/rosa do bem bom.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Cartaz para a corrida Rosa do Bem</h4>
+                <p>Projeto de publicidade e propaganda</p>
+                <a href="assets/img/portfolio/rosa do bem bom.png" title="Cartaz para a corrida Rosa do Bem" data-gallery="portfolio-gallery-design" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+              <img src="assets/img/portfolio/cartaz mae do gu.PNG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Rebrainding para a empresa de doces da minha mãe</h4>
+                <p>Projeto de publicidade e propaganda</p>
+                <a href="assets/img/portfolio/cartaz mae do gu.PNG" title="Rebrainding para a empresa de doces da minha mãe" data-gallery="portfolio-gallery-design" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+              <img src="assets/img/portfolio/logo bolsa politec 2026.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Logo Bolsa Politec 2026</h4>
+                <p>Projeto de identidade visual</p>
+                <a href="assets/img/portfolio/logo bolsa politec 2026.png" title="Logo Bolsa Politec 2026" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <img src="assets/img/portfolio/cyber cafe top.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Cyber Cafe Top</h4>
+                <p>Projeto de web</p>
+                <a href="assets/img/portfolio/cyber cafe top.png" title="Cyber Cafe " data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <img src="assets/img/portfolio/Spotify.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Site do Spotify</h4>
+                <p>Projeto de web</p>
+                <a href="assets/img/portfolio/Spotify.png" title="Site do Spotify" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+              <img src="assets/img/portfolio/lolla vetorização.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Lolla Vetorização</h4>
+                <p>Projeto de identidade visual</p>
+                <a href="assets/img/portfolio/lolla vetorização.png" title="Lolla Vetorização" data-gallery="portfolio-gallery-design" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <img src="assets/img/portfolio/formatos tios da helo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Site para Web</h4>
+                <p>Projeto feito com clientes reais </p>
+                <a href="assets/img/portfolio/formatos tios da helo.png" title="Site para Web" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <img src="assets/img/portfolio/Tios da helo capa principal.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Projeto para Web</h4>
+                <p>Projeto para Web com clientes reais</p>
+                <a href="assets/img/portfolio/Tios da helo capa principal.png" title="Projeto para Web com clientes reais" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-variados">
+              <img src="assets/img/portfolio/sapo.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Sapo vetorizado no Ilustrator </h4>
+                <p>Ilustração vetorizada do sapo</p>
+                <a href="assets/img/portfolio/sapo.png" title="Sapo vetorizado no Ilustrator" data-gallery="portfolio-gallery-variados" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design">
+              <img src="assets/img/portfolio/horizon.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flyer para empresa fictícia</h4>
+                <p>Publicidade para empresa de topicos de atuação profissional</p>
+                <a href="assets/img/portfolio/horizon.png" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Faixa de transição para preto, antecedendo a seção do robô 3D -->
+    <div class="section-fade-to-black" aria-hidden="true"></div>
+
+    <!-- Robot 3D Section -->
+    <section id="robot-3d" class="robot-3d-section section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="robot-3d-card" id="robotSpotlightCard">
+
+          <div class="robot-3d-spotlight" id="robotSpotlight"></div>
+
+          <div class="robot-3d-content">
+
+            <!-- Left content -->
+            <div class="robot-3d-text">
+              <h2>Gustabot</h2>
+              <p>
+                Dou vida à interface com cenas 3D interativas. Um jeito diferente
+                de criar experiências imersivas que chamam atenção e destacam o projeto.
+              </p>
+            </div>
+
+            <!-- Right content -->
+            <div class="robot-3d-scene">
+              <spline-viewer url="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"></spline-viewer>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Robot 3D Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Cursos que</span><strong> Recomendo</strong></h3>
+              <p>
+             Cursos no ramo do TI é sempre algo muito bem recomendado, pois como o meu cordenador Claudio sempre fala, "TI é uma área que está em constante evolução, e para se manter atualizado, é essencial buscar aprendizado contínuo". Por isso, aqui estão alguns cursos que recomendo para quem deseja se aprofundar no mundo da tecnologia.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>Fundamentos de TI</span></h3>
+                <div class="faq-content">
+                  <p>na Escola Virtual Fundação Bradesco: Aprenda hardware, software, sistemas lógicos e segurança da informação de forma 100% gratuita.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>IBM SkillsBuild</span></h3>
+                <div class="faq-content">
+                  <p>Programa 100% gratuito voltado a iniciantes e profissionais, com foco em IA, dados, segurança e fundamentos de TI.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>Microsoft Learn:</span></h3>
+                <div class="faq-content">
+                  <p> Traz trilhas de aprendizado oficiais sobre sistemas operacionais, suporte técnico e produtividade.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>Cisco Networking Academy:</span></h3>
+                <div class="faq-content">
+                  <p>Disponibiliza capacitações renomadas em redes de computadores, internet das coisas e cibersegurança sem custo.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>Samsung Ocean:</span></h3>
+                <div class="faq-content">
+                  <p>Iniciativa da Samsung que disponibiliza cursos e laboratórios digitais voltados para a capacitação em tecnologia, abordando desde lógica de programação até inteligência artificial e criação de jogos.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section accent-background">
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/Steve_Jobs_.jpg" class="testimonial-img" alt="">
+                <h3>Steve Jobs</h3>
+                <h4>Fundador da Apple</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>“Você precisa começar pela experiência do cliente e trabalhar de trás para frente até chegar à tecnologia”.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/bil gates.jpg" class="testimonial-img" alt="">
+                <h3> Bill Gates</h3>
+                <h4>Fundador da Microsoft</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>“A tecnologia é só uma ferramenta. No que se refere a motivar as pessoas e conseguir que trabalhem juntas, um professor [ou líder] é um recurso mais importante.”</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/jair baldo.jpg" class="testimonial-img" alt="">
+                <h3>Jair Baldo</h3>
+                <h4>Cordenador do curso técnico no colégio politec</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>"Já reiniciou a máquina?"</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contato</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Endereço</h3>
+                  <p>Nova Odessa, São Paulo - Brasil </p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Telefone</h3>
+                  <p>+55 19 98361-0545</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email </h3>
+                  <p>busnardoortolanigustavo@gmail.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="nome" class="form-control" placeholder="Seu Nome" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Seu Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Assunto" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
+
+              <button type="submit">Enviar Mensagem</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Gustavo Busnardo</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        
+        <a href="https://www.instagram.com/gustavo_buzzz?igsh=MW92OXppdmU5bjhhNw%3D%3D&igsi=MW92OXppdmU5bjhhNw%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/gustavo-b-3ba9313b0?utm_source=share_via&utm_content=profile&utm_medium=member_ios"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Three.js (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- WebGL Shader Hero JS -->
+  <script src="assets/js/webgl-hero.js"></script>
+
+  <!-- Spline 3D Viewer (web component, sem necessidade de React) -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+
+  <!-- Robot 3D Section JS -->
+  <script src="assets/js/robot-3d.js"></script>
+
+  <!-- Dreams Section: Siri Wave Effect JS -->
+  <script src="assets/js/siri-wave.js"></script>
+
+</body>
+
+</html>
